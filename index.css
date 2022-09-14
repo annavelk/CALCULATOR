@@ -1,0 +1,116 @@
+main{ /*Правила для всего документа*/
+    height: 100vh;
+    background: #6667AB;
+    font-family: Roboto;
+    padding-top: 50px;
+  } 
+
+.btn {
+    width: 40px;
+  height: 40px;
+  background: #ecf0f3;
+  margin: 10px;
+  border: 0px;
+  border-radius: 20px;
+  vertical-align:middle;
+  flex-wrap: wrap;
+  color: #6667AB;
+  font-size: 24px;
+  text-align:center;
+    -webkit-tap-highlight-color: rgba(35,42,52,0);
+    -webkit-tap-highlight-color: transparent;
+  box-shadow:
+    -7px -7px 20px 0px #fff,
+    -4px -4px 5px 0px #fff,
+    7px 7px 20px 0px #d1d9e6,
+    4px 4px 5px 0px #d1d9e6;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+}
+.btn:active{
+    -webkit-tap-highlight-color: rgba(35,42,52,0);
+    -webkit-tap-highlight-color: transparent;
+  box-shadow:
+    4px 4px 6px 0 #fff,
+    -4px -4px 6px 0 #d1d9e6, 
+    inset -4px -4px 6px 0 #fff,
+    inset 4px 4px 6px 0 #d1d9e6;
+}
+
+#calc-wrap { /*Правила для области калькулятора*/
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f3; 
+  border-radius: 20px;
+}
+
+#calc {
+    width: 250px;
+    height: calc(100% - 110px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputVal {
+  width: 250px;
+  height: 50px;
+  background: #ecf0f3;
+  margin-bottom: 5px;
+  padding: 5px;
+  /* border: 1px solid #6667AB; Обводка временно для понимания границ */
+  border-radius: 10px;
+  font-size: 20px;
+  color: #6667AB;
+  text-align: end;
+}
+#result{
+    width: 250px;
+  height: 50px;
+  background: #ecf0f3;
+  margin-bottom: 5px;
+  padding: 5px;
+  /* border: 1px solid #6667AB; Обводка временно для понимания границ */
+  border-radius: 10px;
+  font-size: 20px;
+  color: #6667AB;
+  font-size: 28px;
+  text-align: start;
+  font-weight: bold;
+}
+.equals {
+    grid-column: 1 / 5;
+    height: 40px;
+    background: #ecf0f3;
+    margin: 10px;
+    border: 0px;
+    border-radius: 20px;
+    color: #6667AB;
+    font-size: 24px;
+    text-align:center;
+      -webkit-tap-highlight-color: rgba(35,42,52,0);
+      -webkit-tap-highlight-color: transparent;
+    box-shadow:
+      -7px -7px 20px 0px #fff,
+      -4px -4px 5px 0px #fff,
+      7px 7px 20px 0px #d1d9e6,
+      4px 4px 5px 0px #d1d9e6;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  }
+  .equals:active{
+      -webkit-tap-highlight-color: rgba(35,42,52,0);
+      -webkit-tap-highlight-color: transparent;
+    box-shadow:
+      4px 4px 6px 0 #fff,
+      -4px -4px 6px 0 #d1d9e6, 
+      inset -4px -4px 6px 0 #fff,
+      inset 4px 4px 6px 0 #d1d9e6;
+  }
